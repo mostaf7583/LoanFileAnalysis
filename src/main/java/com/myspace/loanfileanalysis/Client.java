@@ -8,10 +8,16 @@ public class Client implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Client Name")
+	@org.kie.api.definition.type.Label("Client Name")
 	private java.lang.String clientName;
-	@org.kie.api.definition.type.Label(value = "Client ID")
+	@org.kie.api.definition.type.Label("Client ID")
 	private java.lang.String clientID;
+
+	@org.kie.api.definition.type.Label(value = "Contact Information")
+	private com.myspace.loanfileanalysis.ContactInformation contactInformation;
+
+	@org.kie.api.definition.type.Label(value = "Document Type")
+	private java.util.List<java.lang.String> documentType;
 
 	public Client() {
 	}
@@ -32,9 +38,30 @@ public class Client implements java.io.Serializable {
 		this.clientID = clientID;
 	}
 
-	public Client(java.lang.String clientName, java.lang.String clientID) {
+	public com.myspace.loanfileanalysis.ContactInformation getContactInformation() {
+		return this.contactInformation;
+	}
+
+	public void setContactInformation(
+			com.myspace.loanfileanalysis.ContactInformation contactInformation) {
+		this.contactInformation = contactInformation;
+	}
+
+	public java.util.List<java.lang.String> getDocumentType() {
+		return this.documentType;
+	}
+
+	public void setDocumentType(java.util.List<java.lang.String> documentType) {
+		this.documentType = documentType;
+	}
+
+	public Client(java.lang.String clientName, java.lang.String clientID,
+			com.myspace.loanfileanalysis.ContactInformation contactInformation,
+			java.util.List<java.lang.String> documentType) {
 		this.clientName = clientName;
 		this.clientID = clientID;
+		this.contactInformation = contactInformation;
+		this.documentType = documentType;
 	}
 
 }

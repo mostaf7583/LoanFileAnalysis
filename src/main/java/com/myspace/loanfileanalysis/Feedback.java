@@ -6,12 +6,97 @@ package com.myspace.loanfileanalysis;
 
 public class Feedback implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Feedback() {
-    }
+	@org.kie.api.definition.type.Label(value = "clientName")
+	private java.lang.String clientName;
+	@org.kie.api.definition.type.Label(value = "clientIdOrAccountNumber")
+	private java.lang.String clientIdOrAccountNumber;
+	@org.kie.api.definition.type.Label(value = "dateOfFeedback")
+	private java.time.LocalDate dateOfFeedback;
+	@org.kie.api.definition.type.Label(value = "feedbackType")
+	private java.lang.String feedbackType;
+	@org.kie.api.definition.type.Label(value = "commentsOrExperience")
+	private java.lang.String commentsOrExperience;
+	@org.kie.api.definition.type.Label(value = "suggestionsForImprovement")
+	private java.lang.String suggestionsForImprovement;
+	@org.kie.api.definition.type.Label(value = "followUpRequired")
+	private java.lang.Boolean followUpRequired;
 
+	public Feedback() {
+	}
 
+	public java.lang.String getClientName() {
+		return this.clientName;
+	}
 
+	public void setClientName(java.lang.String clientName) {
+		this.clientName = clientName;
+	}
+
+	public java.lang.String getClientIdOrAccountNumber() {
+		return this.clientIdOrAccountNumber;
+	}
+
+	public void setClientIdOrAccountNumber(
+			java.lang.String clientIdOrAccountNumber) {
+		this.clientIdOrAccountNumber = clientIdOrAccountNumber;
+	}
+
+	public java.time.LocalDate getDateOfFeedback() {
+		return this.dateOfFeedback;
+	}
+
+	public void setDateOfFeedback(java.time.LocalDate dateOfFeedback) {
+		this.dateOfFeedback = dateOfFeedback;
+	}
+
+	public java.lang.String getFeedbackType() {
+		return this.feedbackType;
+	}
+
+	public void setFeedbackType(java.lang.String feedbackType) {
+		this.feedbackType = feedbackType;
+	}
+
+	public java.lang.String getCommentsOrExperience() {
+		return this.commentsOrExperience;
+	}
+
+	public void setCommentsOrExperience(java.lang.String commentsOrExperience) {
+		this.commentsOrExperience = commentsOrExperience;
+	}
+
+	public java.lang.String getSuggestionsForImprovement() {
+		return this.suggestionsForImprovement;
+	}
+
+	public void setSuggestionsForImprovement(
+			java.lang.String suggestionsForImprovement) {
+		this.suggestionsForImprovement = suggestionsForImprovement;
+	}
+
+	public java.lang.Boolean getFollowUpRequired() {
+		return this.followUpRequired;
+	}
+
+	public void setFollowUpRequired(java.lang.Boolean followUpRequired) {
+		this.followUpRequired = followUpRequired;
+	}
+
+	public Feedback(java.lang.String clientName,
+			java.lang.String clientIdOrAccountNumber,
+			java.time.LocalDate dateOfFeedback, java.lang.String feedbackType,
+			java.lang.String commentsOrExperience,
+			java.lang.String suggestionsForImprovement,
+			java.lang.Boolean followUpRequired) {
+		this.clientName = clientName;
+		this.clientIdOrAccountNumber = clientIdOrAccountNumber;
+		this.dateOfFeedback = dateOfFeedback;
+		this.feedbackType = feedbackType;
+		this.commentsOrExperience = commentsOrExperience;
+		this.suggestionsForImprovement = suggestionsForImprovement;
+		this.followUpRequired = followUpRequired;
+	}
 
 }

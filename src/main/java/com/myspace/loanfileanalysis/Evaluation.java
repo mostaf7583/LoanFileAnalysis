@@ -6,12 +6,95 @@ package com.myspace.loanfileanalysis;
 
 public class Evaluation implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Evaluation() {
-    }
+	@org.kie.api.definition.type.Label(value = "submissionId")
+	private java.lang.String submissionId;
+	@org.kie.api.definition.type.Label(value = "evaluatorName")
+	private java.lang.String evaluatorName;
+	@org.kie.api.definition.type.Label(value = "evaluationDate")
+	private java.time.LocalDate evaluationDate;
+	@org.kie.api.definition.type.Label(value = "complianceCheckList")
+	private java.lang.String complianceCheckList;
+	@org.kie.api.definition.type.Label(value = "evaluationSummary")
+	private java.lang.String evaluationSummary;
+	@org.kie.api.definition.type.Label(value = "decision")
+	private java.lang.String decision;
+	@org.kie.api.definition.type.Label(value = "justificationForDecision")
+	private java.lang.String justificationForDecision;
 
+	public Evaluation() {
+	}
 
+	public java.lang.String getSubmissionId() {
+		return this.submissionId;
+	}
 
+	public void setSubmissionId(java.lang.String submissionId) {
+		this.submissionId = submissionId;
+	}
+
+	public java.lang.String getEvaluatorName() {
+		return this.evaluatorName;
+	}
+
+	public void setEvaluatorName(java.lang.String evaluatorName) {
+		this.evaluatorName = evaluatorName;
+	}
+
+	public java.time.LocalDate getEvaluationDate() {
+		return this.evaluationDate;
+	}
+
+	public void setEvaluationDate(java.time.LocalDate evaluationDate) {
+		this.evaluationDate = evaluationDate;
+	}
+
+	public java.lang.String getComplianceCheckList() {
+		return this.complianceCheckList;
+	}
+
+	public void setComplianceCheckList(java.lang.String complianceCheckList) {
+		this.complianceCheckList = complianceCheckList;
+	}
+
+	public java.lang.String getEvaluationSummary() {
+		return this.evaluationSummary;
+	}
+
+	public void setEvaluationSummary(java.lang.String evaluationSummary) {
+		this.evaluationSummary = evaluationSummary;
+	}
+
+	public java.lang.String getDecision() {
+		return this.decision;
+	}
+
+	public void setDecision(java.lang.String decision) {
+		this.decision = decision;
+	}
+
+	public java.lang.String getJustificationForDecision() {
+		return this.justificationForDecision;
+	}
+
+	public void setJustificationForDecision(
+			java.lang.String justificationForDecision) {
+		this.justificationForDecision = justificationForDecision;
+	}
+
+	public Evaluation(java.lang.String submissionId,
+			java.lang.String evaluatorName, java.time.LocalDate evaluationDate,
+			java.lang.String complianceCheckList,
+			java.lang.String evaluationSummary, java.lang.String decision,
+			java.lang.String justificationForDecision) {
+		this.submissionId = submissionId;
+		this.evaluatorName = evaluatorName;
+		this.evaluationDate = evaluationDate;
+		this.complianceCheckList = complianceCheckList;
+		this.evaluationSummary = evaluationSummary;
+		this.decision = decision;
+		this.justificationForDecision = justificationForDecision;
+	}
 
 }

@@ -6,12 +6,35 @@ package com.myspace.loanfileanalysis;
 
 public class Client implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Client() {
-    }
+	@org.kie.api.definition.type.Label(value = "Client Name")
+	private java.lang.String clientName;
+	@org.kie.api.definition.type.Label(value = "Client ID")
+	private java.lang.String clientID;
 
+	public Client() {
+	}
 
+	public java.lang.String getClientName() {
+		return this.clientName;
+	}
 
+	public void setClientName(java.lang.String clientName) {
+		this.clientName = clientName;
+	}
+
+	public java.lang.String getClientID() {
+		return this.clientID;
+	}
+
+	public void setClientID(java.lang.String clientID) {
+		this.clientID = clientID;
+	}
+
+	public Client(java.lang.String clientName, java.lang.String clientID) {
+		this.clientName = clientName;
+		this.clientID = clientID;
+	}
 
 }

@@ -6,12 +6,95 @@ package com.myspace.loanfileanalysis;
 
 public class SupportRequest implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public SupportRequest() {
-    }
+	@org.kie.api.definition.type.Label(value = "clientName")
+	private java.lang.String clientName;
+	@org.kie.api.definition.type.Label(value = "clientIdOrAccountNumber")
+	private java.lang.String clientIdOrAccountNumber;
+	@org.kie.api.definition.type.Label(value = "requestDate")
+	private java.time.LocalDate requestDate;
+	@org.kie.api.definition.type.Label(value = "issueDescription")
+	private java.lang.String issueDescription;
+	@org.kie.api.definition.type.Label(value = "priorityLevel")
+	private java.lang.String priorityLevel;
+	@org.kie.api.definition.type.Label(value = "assignedTo")
+	private java.lang.String assignedTo;
+	@org.kie.api.definition.type.Label(value = "status")
+	private java.lang.String status;
 
+	public SupportRequest() {
+	}
 
+	public java.lang.String getClientName() {
+		return this.clientName;
+	}
 
+	public void setClientName(java.lang.String clientName) {
+		this.clientName = clientName;
+	}
+
+	public java.lang.String getClientIdOrAccountNumber() {
+		return this.clientIdOrAccountNumber;
+	}
+
+	public void setClientIdOrAccountNumber(
+			java.lang.String clientIdOrAccountNumber) {
+		this.clientIdOrAccountNumber = clientIdOrAccountNumber;
+	}
+
+	public java.time.LocalDate getRequestDate() {
+		return this.requestDate;
+	}
+
+	public void setRequestDate(java.time.LocalDate requestDate) {
+		this.requestDate = requestDate;
+	}
+
+	public java.lang.String getIssueDescription() {
+		return this.issueDescription;
+	}
+
+	public void setIssueDescription(java.lang.String issueDescription) {
+		this.issueDescription = issueDescription;
+	}
+
+	public java.lang.String getPriorityLevel() {
+		return this.priorityLevel;
+	}
+
+	public void setPriorityLevel(java.lang.String priorityLevel) {
+		this.priorityLevel = priorityLevel;
+	}
+
+	public java.lang.String getAssignedTo() {
+		return this.assignedTo;
+	}
+
+	public void setAssignedTo(java.lang.String assignedTo) {
+		this.assignedTo = assignedTo;
+	}
+
+	public java.lang.String getStatus() {
+		return this.status;
+	}
+
+	public void setStatus(java.lang.String status) {
+		this.status = status;
+	}
+
+	public SupportRequest(java.lang.String clientName,
+			java.lang.String clientIdOrAccountNumber,
+			java.time.LocalDate requestDate, java.lang.String issueDescription,
+			java.lang.String priorityLevel, java.lang.String assignedTo,
+			java.lang.String status) {
+		this.clientName = clientName;
+		this.clientIdOrAccountNumber = clientIdOrAccountNumber;
+		this.requestDate = requestDate;
+		this.issueDescription = issueDescription;
+		this.priorityLevel = priorityLevel;
+		this.assignedTo = assignedTo;
+		this.status = status;
+	}
 
 }

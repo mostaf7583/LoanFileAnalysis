@@ -13,11 +13,17 @@ public class Client implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Client ID")
 	private java.lang.String clientID;
 
-	@org.kie.api.definition.type.Label(value = "Contact Information")
+	@org.kie.api.definition.type.Label("Contact Information")
 	private com.myspace.loanfileanalysis.ContactInformation contactInformation;
 
-	@org.kie.api.definition.type.Label(value = "Document Type")
-	private java.util.List<java.lang.String> documentType;
+	@org.kie.api.definition.type.Label("Document Type")
+	private String documentType;
+
+	@org.kie.api.definition.type.Label(value = "Submission Date")
+	private java.time.LocalDateTime submissionDate;
+
+	@org.kie.api.definition.type.Label(value = "Comments/Notes")
+	private java.lang.String comments;
 
 	public Client() {
 	}
@@ -47,21 +53,40 @@ public class Client implements java.io.Serializable {
 		this.contactInformation = contactInformation;
 	}
 
-	public java.util.List<java.lang.String> getDocumentType() {
+	public java.lang.String getDocumentType() {
 		return this.documentType;
 	}
 
-	public void setDocumentType(java.util.List<java.lang.String> documentType) {
+	public void setDocumentType(java.lang.String documentType) {
 		this.documentType = documentType;
+	}
+
+	public java.time.LocalDateTime getSubmissionDate() {
+		return this.submissionDate;
+	}
+
+	public void setSubmissionDate(java.time.LocalDateTime submissionDate) {
+		this.submissionDate = submissionDate;
+	}
+
+	public java.lang.String getComments() {
+		return this.comments;
+	}
+
+	public void setComments(java.lang.String comments) {
+		this.comments = comments;
 	}
 
 	public Client(java.lang.String clientName, java.lang.String clientID,
 			com.myspace.loanfileanalysis.ContactInformation contactInformation,
-			java.util.List<java.lang.String> documentType) {
+			java.lang.String documentType,
+			java.time.LocalDateTime submissionDate, java.lang.String comments) {
 		this.clientName = clientName;
 		this.clientID = clientID;
 		this.contactInformation = contactInformation;
 		this.documentType = documentType;
+		this.submissionDate = submissionDate;
+		this.comments = comments;
 	}
 
 }

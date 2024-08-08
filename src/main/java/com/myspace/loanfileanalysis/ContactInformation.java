@@ -6,12 +6,36 @@ package com.myspace.loanfileanalysis;
 
 public class ContactInformation implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public ContactInformation() {
-    }
+	@org.kie.api.definition.type.Label(value = "Email")
+	private java.lang.String email;
+	@org.kie.api.definition.type.Label(value = "Phone Number")
+	private java.lang.String phoneNumber;
 
+	public ContactInformation() {
+	}
 
+	public java.lang.String getEmail() {
+		return this.email;
+	}
 
+	public void setEmail(java.lang.String email) {
+		this.email = email;
+	}
+
+	public java.lang.String getPhoneNumber() {
+		return this.phoneNumber;
+	}
+
+	public void setPhoneNumber(java.lang.String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+
+	public ContactInformation(java.lang.String email,
+			java.lang.String phoneNumber) {
+		this.email = email;
+		this.phoneNumber = phoneNumber;
+	}
 
 }

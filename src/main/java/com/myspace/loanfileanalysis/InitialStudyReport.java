@@ -6,12 +6,95 @@ package com.myspace.loanfileanalysis;
 
 public class InitialStudyReport implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public InitialStudyReport() {
-    }
+	@org.kie.api.definition.type.Label(value = "submissionId")
+	private java.lang.String submissionId;
+	@org.kie.api.definition.type.Label(value = "reviewerName")
+	private java.lang.String reviewerName;
+	@org.kie.api.definition.type.Label(value = "dateOfReview")
+	private java.time.LocalDate dateOfReview;
+	@org.kie.api.definition.type.Label(value = "initialFindings")
+	private java.lang.String initialFindings;
+	@org.kie.api.definition.type.Label(value = "recommendations")
+	private java.lang.String recommendations;
+	@org.kie.api.definition.type.Label(value = "requiredAdditionalDocuments")
+	private java.lang.String requiredAdditionalDocuments;
+	@org.kie.api.definition.type.Label(value = "status")
+	private java.lang.String status;
 
+	public InitialStudyReport() {
+	}
 
+	public java.lang.String getSubmissionId() {
+		return this.submissionId;
+	}
 
+	public void setSubmissionId(java.lang.String submissionId) {
+		this.submissionId = submissionId;
+	}
+
+	public java.lang.String getReviewerName() {
+		return this.reviewerName;
+	}
+
+	public void setReviewerName(java.lang.String reviewerName) {
+		this.reviewerName = reviewerName;
+	}
+
+	public java.time.LocalDate getDateOfReview() {
+		return this.dateOfReview;
+	}
+
+	public void setDateOfReview(java.time.LocalDate dateOfReview) {
+		this.dateOfReview = dateOfReview;
+	}
+
+	public java.lang.String getInitialFindings() {
+		return this.initialFindings;
+	}
+
+	public void setInitialFindings(java.lang.String initialFindings) {
+		this.initialFindings = initialFindings;
+	}
+
+	public java.lang.String getRecommendations() {
+		return this.recommendations;
+	}
+
+	public void setRecommendations(java.lang.String recommendations) {
+		this.recommendations = recommendations;
+	}
+
+	public java.lang.String getRequiredAdditionalDocuments() {
+		return this.requiredAdditionalDocuments;
+	}
+
+	public void setRequiredAdditionalDocuments(
+			java.lang.String requiredAdditionalDocuments) {
+		this.requiredAdditionalDocuments = requiredAdditionalDocuments;
+	}
+
+	public java.lang.String getStatus() {
+		return this.status;
+	}
+
+	public void setStatus(java.lang.String status) {
+		this.status = status;
+	}
+
+	public InitialStudyReport(java.lang.String submissionId,
+			java.lang.String reviewerName, java.time.LocalDate dateOfReview,
+			java.lang.String initialFindings, java.lang.String recommendations,
+			java.lang.String requiredAdditionalDocuments,
+			java.lang.String status) {
+		this.submissionId = submissionId;
+		this.reviewerName = reviewerName;
+		this.dateOfReview = dateOfReview;
+		this.initialFindings = initialFindings;
+		this.recommendations = recommendations;
+		this.requiredAdditionalDocuments = requiredAdditionalDocuments;
+		this.status = status;
+	}
 
 }

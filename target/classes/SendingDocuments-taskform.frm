@@ -1,0 +1,1 @@
+{"id":"1f12ac2d-6db7-433c-bb65-5a295e145cb5","name":"SendingDocuments-taskform.frm","model":{"taskName":"SendingDocuments","processId":"LoanFileAnalysis.LoanFileAnalysisProcess","properties":[],"formModelType":"org.kie.workbench.common.forms.jbpm.model.authoring.task.TaskFormModel"},"fields":[],"layoutTemplate":{"version":3,"style":"FLUID","layoutProperties":{},"rows":[]}}

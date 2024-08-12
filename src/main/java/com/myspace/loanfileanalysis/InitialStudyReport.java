@@ -8,19 +8,19 @@ public class InitialStudyReport implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "submissionId")
+	@org.kie.api.definition.type.Label("submissionId")
 	private java.lang.String submissionId;
-	@org.kie.api.definition.type.Label(value = "reviewerName")
+	@org.kie.api.definition.type.Label("Reviewer Name")
 	private java.lang.String reviewerName;
-	@org.kie.api.definition.type.Label(value = "dateOfReview")
+	@org.kie.api.definition.type.Label("Date Of Review")
 	private java.time.LocalDate dateOfReview;
-	@org.kie.api.definition.type.Label(value = "initialFindings")
+	@org.kie.api.definition.type.Label("Initial Findings")
 	private java.lang.String initialFindings;
-	@org.kie.api.definition.type.Label(value = "recommendations")
+	@org.kie.api.definition.type.Label("recommendations")
 	private java.lang.String recommendations;
-	@org.kie.api.definition.type.Label(value = "requiredAdditionalDocuments")
+	@org.kie.api.definition.type.Label("Required Additional Documents")
 	private java.lang.String requiredAdditionalDocuments;
-	@org.kie.api.definition.type.Label(value = "status")
+	@org.kie.api.definition.type.Label("Status")
 	private java.lang.String status;
 
 	public InitialStudyReport() {

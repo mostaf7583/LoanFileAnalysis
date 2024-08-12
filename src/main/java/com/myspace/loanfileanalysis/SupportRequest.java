@@ -8,19 +8,19 @@ public class SupportRequest implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "clientName")
+	@org.kie.api.definition.type.Label("Client Name")
 	private java.lang.String clientName;
-	@org.kie.api.definition.type.Label(value = "clientIdOrAccountNumber")
+	@org.kie.api.definition.type.Label("ClientId or Account Number")
 	private java.lang.String clientIdOrAccountNumber;
-	@org.kie.api.definition.type.Label(value = "requestDate")
+	@org.kie.api.definition.type.Label("Request Date")
 	private java.time.LocalDate requestDate;
-	@org.kie.api.definition.type.Label(value = "issueDescription")
+	@org.kie.api.definition.type.Label("Issue Description")
 	private java.lang.String issueDescription;
-	@org.kie.api.definition.type.Label(value = "priorityLevel")
+	@org.kie.api.definition.type.Label("Priority Level")
 	private java.lang.String priorityLevel;
-	@org.kie.api.definition.type.Label(value = "assignedTo")
+	@org.kie.api.definition.type.Label("Assigned To")
 	private java.lang.String assignedTo;
-	@org.kie.api.definition.type.Label(value = "status")
+	@org.kie.api.definition.type.Label("status")
 	private java.lang.String status;
 
 	public SupportRequest() {
